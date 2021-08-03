@@ -12,7 +12,7 @@ bug-reports:    https://github.com/spamegg1/haskell-simple-wordgame/issues
 author:         spamegg
 maintainer:     spamegg@pm.me
 copyright:      2021 Spam Egg
-license:        BSD
+license:        BSD3
 license-file:   LICENSE
 build-type:     Simple
 extra-source-files:

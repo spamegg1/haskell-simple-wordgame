@@ -34,4 +34,14 @@ These instructions are for Windows. Linux/Mac are similar/easier.
 
    ![07](images/07.png)
 
-GAME IS STILL INCOMPLETE! TODO: implement `playHand` and `playGame`.
+8. Run `stack test`.
+
+   ![08](images/08.png)
+
+9. Run `stack run` to play the game!
+
+
+
+GAME IS STILL INCOMPLETE! 
+
+TODO: implement `playHand` and `playGame`.

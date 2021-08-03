@@ -1,7 +1,7 @@
 name:                haskell-simple-wordgame
 version:             0.1.0.0
 github:              "spamegg1/haskell-simple-wordgame"
-license:             BSD
+license:             BSD3
 author:              "spamegg"
 maintainer:          "spamegg@pm.me"
 copyright:           "2021 Spam Egg"
