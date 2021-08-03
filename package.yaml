@@ -1,0 +1,55 @@
+name:                haskell-simple-wordgame
+version:             0.1.0.0
+github:              "spamegg1/haskell-simple-wordgame"
+license:             GPLv3
+author:              "spamegg"
+maintainer:          "spamegg@pm.me"
+copyright:           "2021 Spam Egg"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/githubuser/haskell-simple-wordgame#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+
+library:
+  source-dirs: src
+  dependencies:
+    - containers  # THIS IS NEW!
+    - random      # THIS IS NEW!
+
+executables:
+  haskell-simple-wordgame-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - haskell-simple-wordgame
+
+tests:
+  haskell-simple-wordgame-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies: # THESE ARE NEW
+    - base
+    - hspec
+    - QuickCheck
+    - containers
+    - haskell-simple-wordgame
